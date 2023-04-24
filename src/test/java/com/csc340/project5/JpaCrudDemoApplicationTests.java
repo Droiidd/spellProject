@@ -1,4 +1,4 @@
-package com.csc340.jpacruddemo;
+package com.csc340.project5;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -17,21 +17,30 @@
             <div class="card">
                 <div class="card-body">
                     <div class="col-md-10">
-                        <form action="#" th:action="@{/spell/update}" th:object="${spell}"
+                        <form action="#" th:action="@{/employees/update}" th:object="${employee}"
                               method="post">
 
                             <table border="0" cellpadding="10">
                                 <tr>
-                                    <td>ID:</td>
-                                    <td><input type="number" th:field="*{id}" value="${spell.id}" readonly /></td>
+                                    <td>SSN (No-Edits):</td>
+                                    <td><input type="number" th:field="*{ssn}" value="${employee.ssn}" readonly /></td>
                                 </tr>
                                 <tr>
-                                    <td>Spell Name:</td>
-                                    <td><input type="text" th:field="*{spellName}" value="${spell.spellName}"/></td>
+                                    <td>First Name:</td>
+                                    <td><input type="text" th:field="*{f_name}" value="${employee.f_name}"/></td>
                                 </tr>
                                 <tr>
-                                    <td>Spell Effects:</td>
-                                    <td><input type="text" th:field="*{spellEffects}" value="${spell.spellEffects}"/></td>
+                                    <td>Middle Initial:</td>
+                                    <td><input type="text" th:field="*{m_init}" value="${employee.m_init}"/></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Last Name:</td>
+                                    <td><input type="text" th:field="*{l_name}" value="${employee.l_name}"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td><input type="text" th:field="*{address}" value="${employee.address}"/></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><button type="submit">Save</button> </td>

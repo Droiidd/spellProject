@@ -1,4 +1,4 @@
-package com.csc340.jpacruddemo;
+package com.csc471.project5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
